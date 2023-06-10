@@ -7,7 +7,6 @@ import { clearErrors, getProduct } from "../../actions/productAction";
 import { useSelector, useDispatch } from "react-redux";
 import Loader from "../layout/Loader/Loader";
 import { useAlert } from "react-alert";
-import EchatBot from "../chatbot/chat";
 import Search from "../Product/Search";
 
 const Home = ({ history }) => {
@@ -74,8 +73,6 @@ const Home = ({ history }) => {
                 <ProductCard key={product._id} product={product} />
               ))}
           </div>
-
-          <EchatBot/>
         </Fragment>
         
       )}
