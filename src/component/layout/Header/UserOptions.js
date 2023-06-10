@@ -61,6 +61,7 @@ const UserOptions = ({ user }) => {
     alert.success("Logout Successfully");
   }
 
+  if(!user) return null
   return (
     <Fragment>
       <Backdrop open={open} style={{ zIndex: "10" }} />
