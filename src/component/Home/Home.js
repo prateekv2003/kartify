@@ -31,9 +31,9 @@ const Home = ({ history }) => {
     dispatch(getProduct());
   }, [dispatch, error, alert]);
 
-  useEffect(() => {
-    localStorage.setItem("isVisitedBefore", true);
-  }, []);
+  // useEffect(() => {
+  //   localStorage.setItem("isVisitedBefore", true);
+  // }, []);
 
   return (
     <Fragment>

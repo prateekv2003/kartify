@@ -71,9 +71,8 @@ function App() {
   const [isVisitedBefore, setIsVisitedBefore] = useState(localStorage.getItem("isVisitedBefore"))
   const handleHomeClick=()=>{
     setIsVisitedBefore(true);
-    console.log("Hello")
   }
-  // let isVisitedBefore = false;
+  
   return (
     <>
       {isVisitedBefore || isAuthenticated
